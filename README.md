@@ -1,46 +1,51 @@
-# Getting Started with Create React App
+# Visão Astro Diária
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicação React que exibe a **Imagem do Dia** (APOD) fornecida pela API da NASA.
+O foco é mostrar diariamente — e atualizar automaticamente duas vezes por dia — a foto ou vídeo astronômico mais recente, incluindo título e data.
 
-## Available Scripts
+## 📦 Funcionalidades
 
-In the project directory, you can run:
+- Consome a API NASA APOD para obter a mídia do dia
+- Detecta automaticamente se o recurso é imagem ou vídeo (`.mp4`, `.webm`, etc)
+- Atualização a cada 12 horas (duas vezes por dia) enquanto a aplicação estiver aberta
+- Layout responsivo com header, conteúdo centralizado e footer
+- Informações do autor com links para LinkedIn e GitHub
+- Configuração da `api_key` via `config.json` ou variáveis de ambiente
 
-### `npm start`
+## Tela
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## 🔧 Estrutura do projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+src/
+├── components/
+│   ├── HeaderFiles/
+│   │   ├── Header.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Header.css
+│   │   └── Footer.css
+│   └── Imagem/
+│       ├── ImagemCard.tsx
+│       └── ImagemCard.css
+├── config/
+│   └── config.json
+├── services/
+│   ├── NasaApiService.ts
+│   └── ImagemService.ts
+├── types/
+│   └── ImagemNasa.ts
+├── App.tsx
+└── index.tsx
+```
 
-### `npm run build`
+## ✍️ Autor
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Desenvolvido por **Emmanuel Martins**
+- LinkedIn: https://www.linkedin.com/in/emmanuelmartinsb/
+- GitHub: https://github.com/EmmanuelMartins21
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+*Projeto educativo que consome dados públicos da NASA. A chave de API deve ser mantida em segurança.*
