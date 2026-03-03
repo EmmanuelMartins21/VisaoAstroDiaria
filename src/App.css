@@ -1,0 +1,21 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App > header {
+  flex-shrink: 0;
+}
+
+.App > footer {
+  flex-shrink: 0;
+  margin-top: auto;
+}
+
+/* Main content area */
+.App > div {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 10px;
+}

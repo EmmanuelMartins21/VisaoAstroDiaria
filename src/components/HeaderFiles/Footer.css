@@ -1,0 +1,93 @@
+.footer {
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-text {
+  margin: 0 0 10px 0;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.footer-text strong {
+  font-weight: 600;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  padding: 6px 14px;
+  border: 1.5px solid white;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+.footer-link:hover {
+  background-color: white;
+  color: #0072ff;
+  transform: translateY(-1px);
+}
+
+.footer-link.linkedin:hover {
+  color: #0a66c2;
+}
+
+.footer-link.github:hover {
+  color: #333;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .footer {
+    padding: 12px 15px;
+  }
+
+  .footer-text {
+    font-size: 0.75rem;
+  }
+
+  .footer-links {
+    gap: 8px;
+  }
+
+  .footer-link {
+    padding: 5px 10px;
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 10px 10px;
+  }
+
+  .footer-text {
+    font-size: 0.7rem;
+  }
+
+  .footer-links {
+    gap: 6px;
+    flex-direction: row;
+  }
+
+  .footer-link {
+    padding: 4px 8px;
+    font-size: 0.65rem;
+  }
+}
