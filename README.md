@@ -13,6 +13,7 @@ O foco é mostrar diariamente — e atualizar automaticamente duas vezes por dia
 - Configuração da `api_key` via `config.json` ou variáveis de ambiente
 
 ## Tela
+<img width="1915" height="1034" alt="image" src="https://github.com/user-attachments/assets/b057de56-3b3f-4512-a3c6-81ae3c5e9ab3" />
 
 
 
