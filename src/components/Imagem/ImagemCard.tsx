@@ -52,6 +52,7 @@ const ImagemCard: React.FC = () => {
       )}
       <div className="imagem-info">
         <h2>{imagem.titulo}</h2>
+        <p>{imagem.descricao}</p>
         <p>{formattedDate}</p>
       </div>
     </div>
